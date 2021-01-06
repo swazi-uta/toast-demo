@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'toast-demo';
+	title = 'toast-demo';
+	
+	constructor(
+		private toastr: ToastrService
+	) { }
+
+	public showSuccess() {
+		this.toastr.success('登録されました。', '【システムからの通知】');
+	}
 }
