@@ -1,18 +1,25 @@
+// definition
+$main-color: #67c5ff;
+
 .body {
 	text-align: center;
+}
+
+h1 {
+	color: $main-color;
 }
 
 .btn-flat-border {
   display: inline-block;
   padding: 0.3em 1em;
   text-decoration: none;
-  color: #67c5ff;
-  border: solid 2px #67c5ff;
+  color: $main-color;
+  border: solid 2px $main-color;
   border-radius: 3px;
   transition: .4s;
 }
 
 .btn-flat-border:hover {
-  background: #67c5ff;
+  background: $main-color;
   color: white;
 }
